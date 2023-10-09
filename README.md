@@ -30,7 +30,7 @@ python3 manage.py loaddata fixture/menuitem.json
 ```
 + Запустите приложение
 ```bash
-python3 manage.py runsever 8001
+python3 manage.py runserver 8001
 ```
 
 ## Примеры
