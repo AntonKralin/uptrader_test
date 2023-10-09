@@ -1,0 +1,12 @@
+{% if main_menu %}
+    <ul>
+        <li>
+            <a href='{{main_menu.link}}'>{{main_menu.title}}</a>
+        </li>
+        <ul>
+            {% include 'section.html' with items=items%}
+        </ul>
+    </ul>
+{% else %}
+<p>Меню не найдено.</p>
+{% endif %}
