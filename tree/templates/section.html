@@ -1,0 +1,14 @@
+<ul>
+    {%for key, values in items.items %}
+        {% if key == 'level' %}
+            {% for i in values %}
+                <li>
+                <a href='{{i.link}}'>{{i.title}}</a>
+                </li>
+                {% if i == items.active and items.next%}
+                    {% include 'section.html' with items=items.next%}
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>
